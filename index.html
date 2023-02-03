@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div id="contaner">
+   <div class="main">
+     <img src="tem.png" alt="">
+      <h1>TEMPERTURE CONVERTER</h1>
+      <div class="for">
+        <form action="">
+          <div>
+          <label for="cls">
+             Celsius <br> <input type="number" id="cls" value="0">
+        </label></div>
+        <!-- <button type="button"> CONVERTER</button> -->
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div>
+        <label for="fah">
+          Fahrenheit <br> <input type="number" id="fah" value="35">
+     </label>
+     </div>
+        </form>
+        <div>
+     
+      </div>
+
+
+
+
+   </div>
+
+
+ </div>
+
+  <script>
+    var c=document.getElementById("cls");
+    var f=document.getElementById("fah");
+    cls.addEventListener('input' ,function(){
+              let cel = this.value;
+              let far = (cel * 9/5) + 32;
+            //  if(!Number.isInteger(far)){
+            //  f=f.toFixed(4);}
+              f.value = far;
+    });
+    fah.addEventListener('input' ,function(){
+              let far = this.value;
+              let cel = (far - 32) * 5/9 ;
+            //   if(!Number.isInteger(cel)){
+            //  cel=cel.toFixed(4);}
+              c.value = cel;
+      
+    });
+    
+  </script>
+ <script src="https://kit.fontawesome.com/e8c1e62dd8.js" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
